@@ -18,7 +18,6 @@ const useProducts = () => {
         setIsFetching(true);
         getProducts().then((products: IProduct[]) => {
             setIsFetching(false);
-            console.log({products})
             setProducts(products);
         });
     }, [setIsFetching, setProducts]);

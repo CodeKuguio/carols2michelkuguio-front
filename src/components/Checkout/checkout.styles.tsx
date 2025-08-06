@@ -12,9 +12,8 @@ export const Container = styled.section`
     gap: 2rem;
     text-align: justify;
     align-items: center;
-    @media ${device.mobile} {
-   
-    }
+
+    
 `
 
 export const WrapperCard = styled.section<WrapperCardProps>`
@@ -25,7 +24,7 @@ export const WrapperCard = styled.section<WrapperCardProps>`
     justify-content: center;
     position: relative;
     flex: 1;
-    
+
     &::before {
         content: "";
         width: 400px;
@@ -214,14 +213,21 @@ export const ContentCard = styled.div`
         color: ${props => props.theme.colors.titleColor};
         align-self: center;
     }
-
+    @media ${device.mobile} {
+        flex-direction: column;
+    }
     form {
         display: flex;
         flex-direction: column;
         gap: 2rem;
         z-index: 999;
-        min-width: 400px;
 
+        @media ${device.laptop} {
+            min-width: 300px;
+        }
+        @media ${device.tablet} {
+            min-width: 250px;
+        }
         fieldset {
             display: flex;
             flex-direction: column;
@@ -263,7 +269,7 @@ export const Products = styled.div`
     color: ${props => props.theme.colors.defaultColor};
     text-align: justify;
     align-items: stretch;
-    width: 100%;
+    flex: 1;
     gap: 2rem;
     .total{
         font-size: 2rem;
@@ -278,6 +284,12 @@ export const Products = styled.div`
         flex: 1;
         width: 100%;
         min-width: 400px;
+        @media ${device.laptop} {
+            min-width: 300px;
+        }
+        @media ${device.tablet} {
+            min-width: 250px;
+        }
         max-height: 352px;
         overflow-y: scroll;
         border-bottom: 1px solid #f0f0f0;

@@ -87,13 +87,17 @@ export const Checkout: React.FC = memo(() => {
         const handle = 'carolina-tavares-090';
         const items = JSON.stringify(products.map(product => ({
             name: product.nome,
-            price: product.preco,
+            price: product.preco * 100,
             quantity: product.quantity
         })));
         const order_nsu = response.data.id;
-        const redirect_url = 'https://carols2michel.kuguio.com.br/chekout'
+        const redirect_url = 'https://carols2michel.kuguio.com.br/checkout'
         const link = `https://checkout.infinitepay.io/${handle}?items=${items}&order_nsu=${order_nsu}&redirect_url=${redirect_url}&customer_name=${payload.name}&customer_email=${payload.email}`
-        window.location.href = link;
+        const a = document.createElement('a');
+        a.href = link;
+        a.target = '_self';
+        a.rel = 'noopener';
+        a.click();
     });
     useEffect(() => {
         if(payment) {
@@ -150,7 +154,7 @@ export const Checkout: React.FC = memo(() => {
                                                 <section>
                                                     {products.map(product => (
                                                         <Product key={product.nome}>
-                                                            <img src={`/public/static/products/${product.imagem}`}
+                                                            <img src={`/static/products/${product.imagem}`}
                                                                  alt={product.nome}/>
                                                             <div className={'content'}>
                                                                 <strong>{product.nome}</strong>

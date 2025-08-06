@@ -169,7 +169,7 @@
         "preco": 700.0,
         "categoria": "Cozinha"
       },
-    
+
       {
         "nome": "Forno de Embutir Electrolux Elétrico 80L Experience ",
         "imagem": "Forno.jpg",
@@ -284,7 +284,7 @@
         "preco": 159.0,
         "categoria": "Cozinha"
       },
-    
+
       {
         "nome": "Aparelho de Jantar e Chá 20 Peças Tramontina de Porcelana ",
         "imagem": "Jogodepanelas.jpg",
@@ -403,7 +403,7 @@
         "nome": "Huilo Huilo Nothofagus Hotel ",
         "imagem": "not.jpg",
         "preco": 1500.00,
-        "cat,egoria": "Lazer"
+        "categoria": "Lazer"
       },
       {
         "nome": "Hotel Vale Nevado",

@@ -27,8 +27,8 @@ import jsonLotie from '../../assets/CM.json'
 import {CheckBox} from "./check-box.tsx";
 import {Controller} from "react-hook-form";
 import {useInviteController} from "./invite.controller.tsx";
-
-
+import {format} from "date-fns";
+import { ptBR } from "date-fns/locale";
 export const Invite: React.FC = memo(() => {
     const {
         control,
@@ -228,7 +228,7 @@ export const Invite: React.FC = memo(() => {
                                                 Preto-SP <br/>
                                                 Horário: 16:30
                                             </p>
-                                            <p>Por favor, confirme sua presença até o dia 27 de maio de 2025!</p>
+                                            <p>Por favor, confirme sua presença até o dia {format(new Date(responseData?.expirationDate||''),"dd 'de' MMMM 'de' yyyy",{locale: ptBR})}!</p>
                                             <p>
                                                 Com carinho, <strong>Michel dos Santos Kuguio </strong> & <strong>Carolina
                                                 Tavares de Oliveira.</strong>

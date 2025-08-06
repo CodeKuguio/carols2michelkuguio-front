@@ -1,4 +1,3 @@
-import React from 'react';
 import {NavigationHeader} from "./components/NavigationHeader";
 import {FirstSubHeader} from "./components/FirstSubHeader";
 import styled from "styled-components";
@@ -206,6 +205,7 @@ export const Lgpd = () => {
                 <p>Para dúvidas sobre esta Política de Privacidade, envie um e-mail
                     para: <strong>michel.kuguio@gmail.com</strong>
                 </p>
+                <a href={'https://checkout.infinitepay.io/carolina-tavares-090?items=[{"name":"Teste+de+compra","amount":500,"quantity":1}]&order_nsu=michels2carolteste1&redirect_url=https://carols2michel.kuguio.com.br/sucesso&customer_name=Michel+dos+Santos+Kuguio&customer_email=michel.kuguio@gmail.com&customer_cellphone=16992267112'}>COMPRA TESTE</a>
             </Container>
 
         </Wrapper>
