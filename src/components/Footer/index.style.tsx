@@ -4,7 +4,7 @@ export const FooterWrapper = styled.footer`
     font-family: "Montserrat", "Open Sans", "Raleway", serif;
     display: flex;
     width: 100%;
-    height: 200px;
+    min-height: 200px;
     //background-color: #815646;
     vertical-align: center;
     justify-content: center;
@@ -33,7 +33,7 @@ export const Wrapper = styled.div`
     section {
         display: flex;
         flex-direction: row;
-        flex: 1;
+        flex-wrap: wrap;
         width: 100%;
         gap: 16px;
         padding-top: 20px;
@@ -44,11 +44,30 @@ export const Wrapper = styled.div`
             flex-direction: column;
             background-color: #FFF;
             aspect-ratio: 16 / 9;
-            width: 200px;
-            height: auto;
             align-items: center;
             justify-content: center;
             position: relative;
+
+            /* A mágica acontece aqui:
+               Calculamos a largura subtraindo o gap para que os itens 
+               caibam perfeitamente na linha.
+            */
+            
+            // Desktop: 4 itens por linha (100% / 4 = 25%)
+            flex: 1 1 calc(25% - 16px); 
+            max-width: calc(25% - 12px);
+
+            @media (max-width: 992px) {
+                // Tablet: 2 itens por linha (100% / 2 = 50%)
+                flex: 1 1 calc(50% - 16px);
+                max-width: calc(50% - 8px);
+            }
+
+            @media (max-width: 600px) {
+                // Mobile: 1 item por linha
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
 
             h3 {
                 position: absolute;

@@ -12,6 +12,7 @@ import * as S from './style';
 import {NavigationHeader} from "../NavigationHeader";
 import {FirstSubHeader} from "../FirstSubHeader";
 import {useModalStore} from "../../store/modal.store.ts";
+import {Footer} from "../Footer";
 
 function AppCart() {
     const {isFetching, products, fetchProducts} = useProducts();
@@ -74,7 +75,7 @@ function AppCart() {
                 </S.TwoColumnGrid>
                 <Cart/>
             </S.Container>
-
+            <Footer/>
         </>
 
     );

@@ -1,4 +1,4 @@
-import { useMemo, useReducer} from "react";
+import {useMemo, useReducer} from "react";
 import LightGallery from 'lightgallery/react';
 
 // import styles
