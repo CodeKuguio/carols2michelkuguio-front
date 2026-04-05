@@ -1,5 +1,5 @@
 
-import response from '../../public/static/json/products.json';
+import response from '../json/products.json';
 import {IProduct} from "../models";
 
 export const getProducts = async () => {

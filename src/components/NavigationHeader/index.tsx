@@ -17,6 +17,7 @@ export const NavigationHeader = (props:NavigationHeaderProps) => {
         "home",
         "quem-somos",
         "nossa-historia",
+        "galeria",
         "confirmacao",
         "presenteie-os-noivos",
         "local",
@@ -80,6 +81,9 @@ export const NavigationHeader = (props:NavigationHeaderProps) => {
                     </li>
                     <li {...activeClass("nossa-historia")}>
                         <Link to="/nossa-historia">Nossa História</Link>
+                    </li>
+                    <li {...activeClass("galeria")}>
+                        <Link to="/galeria">Galeria</Link>
                     </li>
                     <li {...activeClass("confirmacao")}>
                         <Link to="/confirmacao">Confirmação</Link>

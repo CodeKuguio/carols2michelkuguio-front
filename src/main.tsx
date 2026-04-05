@@ -14,6 +14,7 @@ import {ProductsProvider} from "./contexts/products-context";
 import {ToastContainer} from "react-toastify";
 import {Lgpd} from "./Lgpd.tsx";
 import {Checkout} from "./components/Checkout";
+import GaleryPage from "./GaleryPage.tsx";
 
 
 createRoot(document.getElementById('root')!).render(
@@ -28,6 +29,7 @@ createRoot(document.getElementById('root')!).render(
                             <SmoothScroll>
                                 <Routes>
                                     <Route path="/confirmacao" element={<InvitePage />}/>
+                                    <Route path="/galeria" element={<GaleryPage />}/>
                                     <Route path="/checkout" element={<Checkout />}/>
                                     <Route path="/presenteie-os-noivos" element={<AppCart />}/>
                                     <Route path="/politica-de-privacidade" element={<Lgpd />}/>

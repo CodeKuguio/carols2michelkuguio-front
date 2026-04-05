@@ -110,6 +110,48 @@ export const GlobalStyle = createGlobalStyle`
         height: 100%;
     }
 
+    .lg-container {
+        --lg-theme-color: #a0715e;
+        --lg-icon-color: #fff;
+        --lg-icon-hover-color: #fff;
+    }
+    .lg-container .lg-progress { background-color: #a0715e; }
+    .lg-container .lg-progress-bar { background-color: rgba(255,255,255,0.25); }
+    .lg-container .lg-autoplay-button .lg-progress {
+        stroke: #a0715e;
+        stroke-width: 3px;
+    }
+
+    .lg-container .lg-thumb-item {
+        border-color: transparent;
+        transition: border-color .2s ease;
+        border-width: 2px;
+        border-radius: 4px;
+    }
+    .lg-container .lg-thumb-item:hover,
+    .lg-container .lg-thumb-item:focus {
+        border-color: #a0715e;
+    }
+    .lg-container .lg-thumb-item.active {
+        border-color: #a0715e;
+    }
+    .lg-container .lg-thumb-item:hover img,
+    .lg-container .lg-thumb-item.active img {
+        filter: brightness(0.9);
+    }
+    .lg-container .lg-thumb-item img {
+        filter: grayscale(70%) brightness(0.75);
+        transition: filter 0.2s ease;
+    }
+    .lg-container .lg-thumb-item.active img {
+        filter: none;
+    }
+    .lg-container .lg-thumb-item:hover img,
+    .lg-container .lg-thumb-item:focus img {
+        filter: grayscale(30%) brightness(0.9);
+    }
+
+
     #root {
         view-transition-name: root;
         isolation: isolate;
