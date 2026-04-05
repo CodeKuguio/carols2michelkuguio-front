@@ -17,7 +17,7 @@ export const TimeLeft: React.FC<TimeLeftProps> = ({targetDate}) => {
     const {timeLeft} = useTimeLeft({targetDate})
     return (
         <>
-            <Title>Vamos nos casar em</Title>
+            <Title>Estamos casados por</Title>
             <CountdownWrapper>
                 {!!timeLeft && (
                     <>
