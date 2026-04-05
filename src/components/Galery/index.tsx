@@ -33,8 +33,9 @@ const filtersCategoryList = [
     {label: 'Making-Of', category: 'making-of'},
     {label: 'Trailer', category: 'trailer'},
     {label: 'Cerimonia', category: 'cerimonia'},
+    {label: 'Ensaio', category: 'ensaio'},
     {label: 'Festa', category: 'festa'},
-    {label: 'Decoracao', category: 'decoracao'},
+    {label: 'Decoracao', category: 'decoracao'}
 ]
 const filtersTypeList = [
     {label: 'Fotos', category: 'photo'},

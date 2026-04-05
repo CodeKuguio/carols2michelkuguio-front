@@ -98,6 +98,10 @@ export const Text = styled.p`
 export const ContainerButtonFilter = styled.nav`
     display: flex;
     gap: 1rem;
+    margin-bottom: 4rem;
+    @media ${device.laptop} {
+        flex-direction: column;
+    }
 `
 export const ButtonFilter = styled.button`
     font-family: "Montserrat", "Open Sans", "Raleway", serif;
@@ -111,10 +115,17 @@ export const ButtonFilter = styled.button`
     text-align: center;
     background-color: #fff;
     padding: 5px 10px;
-    margin-bottom: 4rem;
+
     float: left;
     @media ${device.mobile} {
         font-size: 1.8rem;
+    }
+    @media ${device.laptop} {
+        display: flex;
+        flex: 1;
+        float: none;
+        align-items: center;
+        justify-content: center;
     }
     &:hover, &:active {
         cursor: pointer;

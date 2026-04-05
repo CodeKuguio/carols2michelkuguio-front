@@ -7,4 +7,7 @@ export default defineConfig({
   server: {
     allowedHosts: ['carols2michel.kuguio.com.br'],
   },
+  build: {
+    outDir: 'build/client',
+  },
 })
