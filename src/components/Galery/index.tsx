@@ -1,4 +1,4 @@
-import {useEffect, useMemo, useReducer} from "react";
+import { useMemo, useReducer} from "react";
 import LightGallery from 'lightgallery/react';
 
 // import styles
@@ -25,8 +25,8 @@ import lgZoom from 'lightgallery/plugins/zoom';
 import lgAutoplay from 'lightgallery/plugins/autoplay';
 import lgFullscreen from 'lightgallery/plugins/fullscreen';
 import lgVideo from 'lightgallery/plugins/video';
-import fjGallery from 'flickr-justified-gallery';
-import {ButtonFilter, Container, Text, WrapperCard} from "./styles.tsx";
+
+import {ButtonFilter, Container, ContainerButtonFilter, Text, WrapperCard} from "./styles.tsx";
 
 const filtersCategoryList = [
     {label: 'Pre-Wedding', category: 'pre-wedding'},
@@ -139,7 +139,6 @@ const images = [
     {name: 'filmagem2.jpeg', type: 'photo', category: 'pre-wedding'},
     {name: 'filmagem3.jpg', type: 'video', src: '//vimeo.com/1180183061', category: 'trailer'},
     {name: 'filmagem4.jpg', type: 'video', src: '//www.youtube.com/watch?v=NlSHVKor6Ss', category: 'cerimonia'},
-    {name: 'filmagem5.jpg', type: 'video', src: '//www.youtube.com/watch?v=ZFjwqk8bXJY', category: 'festa'},
     {name: "01-MakingOff-01.jpg", type: "photo", category: 'making-of'},
     {name: "01-MakingOff-02.jpg", type: "photo", category: 'making-of'},
     {name: "01-MakingOff-03.jpg", type: "photo", category: 'making-of'},
@@ -430,6 +429,7 @@ const images = [
     {name: "07-ensaio-47.jpg", type: "photo", category: "ensaio"},
     {name: "07-ensaio-48.jpg", type: "photo", category: "ensaio"},
     {name: "07-ensaio-49.jpg", type: "photo", category: "ensaio"},
+    {name: 'filmagem5.jpg', type: 'video', src: '//www.youtube.com/watch?v=ZFjwqk8bXJY', category: 'festa'},
     {name: "08-entrada-01.jpg", type: "photo", category: 'festa'},
     {name: "08-entrada-02.jpg", type: "photo", category: 'festa'},
     {name: "08-entrada-03.jpg", type: "photo", category: 'festa'},
@@ -653,35 +653,21 @@ export function Gallery() {
         return data
     },[state.filtersCategory, state.filtersType])
 
-
-    useEffect(() => {
-        const galleryElement = document.querySelector('.gallery');
-        console.log({galleryElement});
-        if (galleryElement) {
-            console.log('updt')
-            fjGallery(galleryElement, {
-                itemSelector: '.gallery__item',
-                rowHeight: 180,
-                lastRow: 'start',
-                gutter: 4,
-                rowHeightTolerance: 0.1,
-                calculateItemsHeight: true,
-            });
-        }
-
-    }, [imagesList])
     return (
         <WrapperCard>
             <Container>
                 <Text>
                     “Grandes coisas fez o Senhor por nós, e por isso estamos alegres.” – Salmos 126:3
                 </Text>
-                {/*{filtersTypeList.map(ft=>(*/}
-                {/*    <ButtonFilter key={ft.category} onClick={changeType(ft.category)}>{ft.label}</ButtonFilter>*/}
-                {/*))}*/}
-                {/*{filtersCategoryList.map(fc=>(*/}
-                {/*    <ButtonFilter key={fc.category} onClick={changeCategory(fc.category)}>{fc.label}</ButtonFilter>*/}
-                {/*))}*/}
+                <ContainerButtonFilter>
+                    {filtersTypeList.map(ft=>(
+                        <ButtonFilter className={state.filtersType.includes(ft.category)?'active':''} key={ft.category} onClick={changeType(ft.category)}>{ft.label}</ButtonFilter>
+                    ))}
+                    {filtersCategoryList.map(fc=>(
+                        <ButtonFilter className={state.filtersCategory.includes(fc.category)?'active':''} key={fc.category} onClick={changeCategory(fc.category)}>{fc.label}</ButtonFilter>
+                    ))}
+
+                </ContainerButtonFilter>
 
                 <LightGallery
                     speed={500}

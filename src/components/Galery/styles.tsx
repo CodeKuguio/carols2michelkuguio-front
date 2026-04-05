@@ -17,6 +17,24 @@ export const Container = styled.div`
     max-width: 1200px;
     padding: 4rem;
     margin: 0 auto;
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .gallery__item {
+        height: 200px; /* Altura fixa para todos */
+        flex-grow: 1;  /* Faz o item expandir para preencher a linha */
+    }
+
+    .gallery__item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+        border-radius: 8px;
+    }
 `;
 export interface WrapperCardProps {
     invert?: boolean;
@@ -77,6 +95,10 @@ export const Text = styled.p`
     }
 `
 
+export const ContainerButtonFilter = styled.nav`
+    display: flex;
+    gap: 1rem;
+`
 export const ButtonFilter = styled.button`
     font-family: "Montserrat", "Open Sans", "Raleway", serif;
     font-optical-sizing: auto;
@@ -84,12 +106,25 @@ export const ButtonFilter = styled.button`
     font-style: italic;
     font-size: 2rem;
     color: #9f9693;
-    align-items: stretch;
+    border: 1px solid #9f9693;
+    border-radius: 5px;
     text-align: center;
+    background-color: #fff;
+    padding: 5px 10px;
     margin-bottom: 4rem;
-    width: 100%;
+    float: left;
     @media ${device.mobile} {
         font-size: 1.8rem;
+    }
+    &:hover, &:active {
+        cursor: pointer;
+        background-color: #9f9693;
+        color: #fff;
+    }
+    &.active {
+        background-color: #a0715e;
+        border: 1px solid #a0715e;
+        color: #fff;
     }
 `
 
