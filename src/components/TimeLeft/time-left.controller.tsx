@@ -18,8 +18,8 @@ export const useTimeLeft = (props: TimeLeftProps) => {
         const interval = setInterval(() => {
             const startDate = parseISO(formatInTimeZone((new Date()).toISOString(), 'America/Sao_Paulo', "yyyy-MM-dd'T'HH:mm:ss'Z'"));
             const interval = {
-                start: startDate,
-                end: endDate,
+                end: startDate,
+                start: endDate,
             };
             const duration = intervalToDuration(interval);
             setTimeLeft({

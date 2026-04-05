@@ -77,6 +77,23 @@ export const Text = styled.p`
     }
 `
 
+export const ButtonFilter = styled.button`
+    font-family: "Montserrat", "Open Sans", "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2rem;
+    color: #9f9693;
+    align-items: stretch;
+    text-align: center;
+    margin-bottom: 4rem;
+    width: 100%;
+    @media ${device.mobile} {
+        font-size: 1.8rem;
+    }
+`
+
+
 export const IFrame = styled.iframe`
     width: 100%;
     height: auto;

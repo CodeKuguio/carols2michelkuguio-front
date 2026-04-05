@@ -1,0 +1,416 @@
+{
+  "data": {
+    "products": [
+      {
+        "nome": "Lavar Roupas Semi-automática 10kg Newmaq",
+        "imagem": "Tanque.jpg",
+        "preco": 515.47,
+        "categoria": "Lavanderia"
+      },
+      {
+        "nome": "Saquinhos para separar roupa íntima",
+        "imagem": "Saquinhos.jpg",
+        "preco": 120.00,
+        "categoria": "Lavanderia"
+      },
+      {
+        "nome": "Robô Aspirador e Passa Pano KaBuM! Smart 700",
+        "imagem": "roboaspirador.png",
+        "preco": 379.0,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Máquina de lavar e secar",
+        "imagem": "maquina.jpg",
+        "preco": 6099.00,
+        "categoria": "Lavanderia"
+      },
+      {
+        "nome": "Conjunto de Jantar Mesa com Vidro",
+        "imagem": "mesa_jantar.png",
+        "preco": 999.00,
+        "categoria": "Sala"
+      },
+      {
+        "nome": "Varal Individual de Parede",
+        "imagem": "Varal.jpg",
+        "preco": 462.00,
+        "categoria": "Lavanderia"
+      },
+      {
+        "nome": "Ferro de Passar a Vapor",
+        "imagem": "Ferrodepassar.jpg",
+        "preco": 299.00,
+        "categoria": "Lavanderia"
+      },
+      {
+        "nome": "Tábua Mesa de Passar",
+        "imagem": "Tábuadepassar.jpg",
+        "preco": 299.00,
+        "categoria": "Lavanderia"
+      },
+      {
+        "nome": "Vassoura elétrica",
+        "imagem": "VassouraEletrica.jpg",
+        "preco": 339.00,
+        "categoria": "Lavanderia"
+      },
+      {
+        "nome": "Fritadeira Elétrica Sem Óleo Air Fryer Mondial",
+        "imagem": "fritadeiraeletrica.png",
+        "preco": 259.00,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Lixeira com Pedal Tramontina",
+        "imagem": "Lixeira.jpg",
+        "preco": 329.00,
+        "categoria": "Lavanderia"
+      },
+      {
+        "nome": "Escada de Alumínio",
+        "imagem": "Escada.jpg",
+        "preco": 199.00,
+        "categoria": "Lavanderia"
+      },
+      {
+        "nome": "Cabeceira casal queen Frame Laranjeiras Carvalho",
+        "imagem": "Cabeceira.jpg",
+        "preco": 917.00,
+        "categoria": "Quarto"
+      },
+      {
+        "nome": "Cama Box + Colchão Castor Queen Premium",
+        "imagem": "box.jpg",
+        "preco": 3247.00,
+        "categoria": "Quarto"
+      },
+      {
+        "nome": "Ar Condicionado Split Hi Wall Samsung WindFree AI Inverter ",
+        "imagem": "ArCondicionado.jpg",
+        "preco": 2689.00,
+        "categoria": "Quarto"
+      },
+      {
+        "nome": "Kit Travesseiro Fibra Sintética Extra Macio Conforto 2 Peças",
+        "imagem": "KitCama.jpg",
+        "preco": 1399.00,
+        "categoria": "Quarto"
+      },
+      {
+        "nome": "Kit Cama Bordado Essencial",
+        "imagem": "KitCama2.jpg",
+        "preco": 2899.00,
+        "categoria": "Quarto"
+      },
+      {
+        "nome": "Kit Cama Bordado Vetra",
+        "imagem": "KitCama3.jpg",
+        "preco": 2799.00,
+        "categoria": "Quarto"
+      },
+      {
+        "nome": "TV- Samsung Smart TV 55 QLED 2025",
+        "imagem": "TVQuarto.jpg",
+        "preco": 2500.00,
+        "categoria": "Quarto"
+      },
+      {
+        "nome": "Kit Vassoura + Pá com Cabo + Rodo 40cm Noviça Bettanin",
+        "imagem": "KitVassouraPaRodo.jpg",
+        "preco": 80.00,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Aspirador de Pó Vertical com Fio Electrolux 1450W 2 em 1 Ultra ",
+        "imagem": "aspirador.png",
+        "preco": 80.00,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Kit Travesseiro Fibra Sintética Extra Macio Conforto 2 Peças Prime",
+        "imagem": "Travesseiros.jpg",
+        "preco": 1399.0,
+        "categoria": "Quarto"
+      },
+      {
+        "nome": "Sofá 3 Lugares Cama Inbox Clean com Assento Retrátil",
+        "imagem": "sofa.png",
+        "preco": 1099.0,
+        "categoria": "Sala"
+      },
+      {
+        "nome": "4212TR – Kit c/ 10 cabides boutique giratorio transparente",
+        "imagem": "Cabides.jpg",
+        "preco": 449.0,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "TV- Samsung Smart TV 50 QLED 4K Q60D 2024",
+        "imagem": "TvQuarto.jpg",
+        "preco": 2000.0,
+        "categoria": "Quarto"
+      },
+      {
+        "nome": "Cooktop 5 Bocas prata",
+        "imagem": "cooktop.png",
+        "preco": 500.0,
+        "categoria": "Quarto"
+      },
+      {
+        "nome": "Coifa de Parede Electrolux 90cm Preta Pro Series com Painel",
+        "imagem": "Coifa.jpg",
+        "preco": 4249.0,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Micro-ondas  ",
+        "imagem": "Microondas.jpg",
+        "preco": 700.0,
+        "categoria": "Cozinha"
+      },
+
+      {
+        "nome": "Forno de Embutir Electrolux Elétrico 80L Experience ",
+        "imagem": "Forno.jpg",
+        "preco": 1599.0,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Geladeira Electrolux Frost Free Inverter 490L com AutoSense ",
+        "imagem": "Geladeira.jpg",
+        "preco": 5599.0,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Purificador Electrolux Eletrônico c/ Painel Digital Blue Touch ",
+        "imagem": "Filtro.jpg",
+        "preco": 1269.0,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Air Fryer Oven Electrolux por Rita Lobo 12L Digital Grafite ",
+        "imagem": "AyrFryer.jpg",
+        "preco": 1299.0,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Sanduicheira Electrolux Efficient Inox Antiaderente",
+        "imagem": "Sanduicheira.jpg",
+        "preco": 159.0,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Liquidificador Electrolux 1200w 1,75L Expert com Copo ",
+        "imagem": "Liquidificador.jpg",
+        "preco": 999.0,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Panela de Arroz Elétrica Electrolux por Rita Lobo 2L",
+        "imagem": "PanelaEletrica.jpg",
+        "preco": 268.0,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Lava-Louças Electrolux 8 Serviços Inox Compacta com Programa ",
+        "imagem": "Lavalouca.jpg",
+        "preco": 3399.0,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Espremedor de Laranjas e Frutas Electrolux Efficient ",
+        "imagem": "Espremedordefruta.jpg",
+        "preco": 159.0,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Cafeteira Elétrica Electrolux 15 Xícaras Efficient com Filtro",
+        "imagem": "Cafeteira.jpg",
+        "preco": 189.0,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Batedeira Planetária Electrolux 750w Preta Experience Com ",
+        "imagem": "Batedeira.jpg",
+        "preco": 659.0,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Faqueiro Aco Inox 76Pcs C/Estojo Vicenza Tramontina 66924305",
+        "imagem": "Faqueiro.jpg",
+        "preco": 2000.0,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Conjunto de Facas Electrolux 8 Peças Inox com Bloco de Madeira",
+        "imagem": "Jogodefacas.jpg",
+        "preco": 614.0,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Aparelho de Jantar e Chá 20 Peças Tramontina de Porcelana Prime ",
+        "imagem": "Aparelhodejantarecha.jpg",
+        "preco": 329.0,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Conjunto De Copos Vidro Nadir Oca 300ml - Kit Com 12 Copos",
+        "imagem": "Jogodecopos.jpg",
+        "preco": 95.0,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Jogo De 6 Taças De Vidro 330ml Diamante Class Home Cor Transparente",
+        "imagem": "Jogodetacas.jpg",
+        "preco": 39.0,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Ralador 4 Faces Tramontina Utilitá em Aço Inox e Alça de ABS Branco",
+        "imagem": "Ralador.jpg",
+        "preco": 105.0,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Balde De Gelo Isolado De Aço Inoxidável De 3 Litros Com Tampa, ",
+        "imagem": "Baldedegelo.jpg",
+        "preco": 228.0,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Fruteira de Mesa de Vidro Haus Concept - Redonda ",
+        "imagem": "Fruteira.jpg",
+        "preco": 159.0,
+        "categoria": "Cozinha"
+      },
+
+      {
+        "nome": "Aparelho de Jantar e Chá 20 Peças Tramontina de Porcelana ",
+        "imagem": "Jogodepanelas.jpg",
+        "preco": 329.0,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Frigideira Tramontina Profissional em Alumínio",
+        "imagem": "Frigideira.jpg",
+        "preco": 292.0,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Kit Assadeira Tramontina Antiaderente Starflon Max",
+        "imagem": "Jogodeformaseassadeiras.jpg",
+        "preco": 165.0,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Chaleira Elétrica Electrolux 1,7L Experience com ",
+        "imagem": "Chaleira.jpg",
+        "preco": 289.0,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Balança de Cozinha Digital Inox para Alimentos Resistente ",
+        "imagem": "Balançadecozinha.jpg",
+        "preco": 54.9,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Tabua Queijos E Frios + Kit Espátulas 04 Peças",
+        "imagem": "Tabuaparaqueijosefrios.jpg",
+        "preco": 78.99,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Jogo de Utensílios Tramontina Utility em Aço Inox",
+        "imagem": "Jogodeutensílioseespátulas.jpg",
+        "preco": 149.0,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Jogo de Taças  de Sobremesa de Vidro 160ml",
+        "imagem": "Jogodesobremesa.jpg",
+        "preco": 82.0,
+        "categoria": "Cozinha"
+      },
+      {
+        "nome": "Jantar romântico no restaurante Liguria, Santiago",
+        "imagem": "jantassantiago.jpg",
+        "preco": 299.00,
+        "categoria": "Gastronomia"
+      },
+      {
+        "nome": "Tour pelas vinícolas do Vale de Casablanca",
+        "imagem": "Valle-de-Casablanca-w540-h540.jpg",
+        "preco": 620.00,
+        "categoria": "Lazer"
+      },
+      {
+        "nome": "Passeio ao Cajón del Maipo e Termas de Colina",
+        "imagem": "6ccb2ed459cbbbb72f84f304397c2741.jpg",
+        "preco": 380.00,
+        "categoria": "Lazer"
+      },
+      {
+        "nome": "Passeio de teleférico no Cerro San Cristóbal",
+        "imagem": "san.jpg",
+        "preco": 360.00,
+        "categoria": "Lazer"
+      },
+      {
+        "nome": "Viagem romântica para Viña del Mar e Valparaíso",
+        "imagem": "valparaiso.jpg",
+        "preco": 350.00,
+        "categoria": "Lazer"
+      },
+      {
+        "nome": "Jantar com show folclórico chileno",
+        "imagem": "jantarshow.jpg",
+        "preco": 610.00,
+        "categoria": "Lazer"
+      },
+      {
+        "nome": "Degustação de vinhos na Viña Concha y Toro",
+        "imagem": "degustacao-de-vinhos-para-iniciantes-scaled.jpg",
+        "preco": 250.00,
+        "categoria": "Lazer"
+      },
+      {
+        "nome": "Passeio ao Parque Nacional Torres del Paine",
+        "imagem": "paine.jpg",
+        "preco": 800.00,
+        "categoria": "Lazer"
+      },
+      {
+        "nome": "Excursão à Ilha de Chiloé",
+        "imagem": "chiloe.jpg",
+        "preco": 600.00,
+        "categoria": "Lazer"
+      },
+      {
+        "nome": "Estação de ski no Chile",
+        "imagem": "ski.jpg",
+        "preco": 400.00,
+        "categoria": "Lazer"
+      },
+      {
+        "nome": "Embalse el yeso",
+        "imagem": "embalse-el-yeso.jpg",
+        "preco": 550.00,
+        "categoria": "Lazer"
+      },
+      {
+        "nome": "Huilo Huilo Nothofagus Hotel ",
+        "imagem": "not.jpg",
+        "preco": 1500.00,
+        "categoria": "Lazer"
+      },
+      {
+        "nome": "Hotel Vale Nevado",
+        "imagem": "valenevado.png",
+        "preco": 380.00,
+        "categoria": "Lazer"
+      }
+    ]
+  }
+}
