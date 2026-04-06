@@ -7,18 +7,18 @@ export const Footer = () => {
         <FooterWrapper>
             <Wrapper>
                 <section>
-                    <article>
-                        <a className={'logo'}>Villaví Eventos</a>
-                    </article>
-                    <article>
+                    <a href={'https://www.instagram.com/villavieventos'} aria-label="link do instagram Villaví Eventos"  target="_blank" rel="noopener noreferrer">
+                        <span className={'logo'}>Villaví Eventos</span>
+                    </a>
+                    <a href={'https://www.instagram.com/andreromeiro1'} aria-label="link do instagram André Romeiro"  target="_blank" rel="noopener noreferrer">
                         <img src={LogoAndreRomeiro} alt="Logo André Romeiro" className="logoAndre"/>
-                    </article>
-                    <article>
+                    </a>
+                    <a href={'https://lucaskuguio.com.br'} aria-label="link do site Lucas Kuguio" target="_blank" rel="noopener noreferrer">
                         <img src={LogoLucasKuguio} alt="Logo Lucas Kuguio" className="logolucas"/>
-                    </article>
-                    <article>
-                        <a className={'logo'}>Giuliano Silveira</a>
-                    </article>
+                    </a>
+                    <a href={'https://www.giulianosilveira.com'} aria-label="link do site Giuliano Silveira"  target="_blank" rel="noopener noreferrer">
+                        <span className={'logo'}>Giuliano Silveira</span>
+                    </a>
                 </section>
             </Wrapper>
         </FooterWrapper>

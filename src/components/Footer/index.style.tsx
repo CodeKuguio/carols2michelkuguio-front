@@ -21,6 +21,7 @@ export const Wrapper = styled.div`
         gap: 10px;
         font-size: 1.4rem;
         margin-bottom: 20px;
+
         &::after, &::before {
             content: " ";
             display: block;
@@ -38,7 +39,7 @@ export const Wrapper = styled.div`
         gap: 16px;
         padding-top: 20px;
 
-        article {
+        a {
             padding: 20px;
             display: flex;
             flex-direction: column;
@@ -47,14 +48,20 @@ export const Wrapper = styled.div`
             align-items: center;
             justify-content: center;
             position: relative;
+            color: #000;
+            text-decoration: none;
+
+            &:hover {
+                border: 2px solid #000;
+            }
 
             /* A mágica acontece aqui:
                Calculamos a largura subtraindo o gap para que os itens 
                caibam perfeitamente na linha.
             */
-            
+
             // Desktop: 4 itens por linha (100% / 4 = 25%)
-            flex: 1 1 calc(25% - 16px); 
+            flex: 1 1 calc(25% - 16px);
             max-width: calc(25% - 12px);
 
             @media (max-width: 992px) {
