@@ -699,24 +699,26 @@ export function Gallery() {
                 >
 
                     {imagesList.map((image, index) => {
-                        if(image.type === "photo" ){
+                        if (image.type === "photo") {
                             return (
-                                <a key={index} href={`/static/galery/${image.name}`} className="gallery__item">
+                                <a key={index}
+                                   href={`https://storage.vps.tukuna.pro/api/v1/buckets/casamento/objects/download?preview=true&amp;prefix=${image.name.replace('&', '%26')}&amp;version_id=null`}
+                                   className="gallery__item">
                                     <img className="img-responsive" alt={image.name}
-                                         src={`/static/galery/thumb/${image.name}`}/>
+                                         src={`https://storage.vps.tukuna.pro/api/v1/buckets/casamento/objects/download?preview=true&amp;prefix=thumb%2F${image.name.replace('&', '%26')}&amp;version_id=null`}/>
                                 </a>
                             )
                         }
                         return (
                             <a
                                 key={index}
-                               className="gallery__item"
-                               data-src={`${image.src}`}
-                               data-sub-html="<h4>Filmagem Pre Wedding</h4><p>Video by <a target='_blank' href='https://vimeo.com/giulianosilveira'>Giuliano Silveira</a></p>"
+                                className="gallery__item"
+                                data-src={`${image.src}`}
+                                data-sub-html="<h4>Filmagem Pre Wedding</h4><p>Video by <a target='_blank' href='https://vimeo.com/giulianosilveira'>Giuliano Silveira</a></p>"
                             >
                                 <img
                                     className="img-responsive"
-                                    src={`/static/galery/thumb/${image.name}`}
+                                    src={`https://storage.vps.tukuna.pro/api/v1/buckets/casamento/objects/download?preview=true&amp;prefix=thumb%2F${image.name.replace('&', '%26')}&amp;version_id=null`}
                                 />
                             </a>
                         )

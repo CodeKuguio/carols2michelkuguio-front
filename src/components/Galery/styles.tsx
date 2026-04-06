@@ -35,7 +35,7 @@ export const Container = styled.div`
         object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
         border-radius: 8px;
     }
-    @media ${device.oldmobile} {
+    @media ${device.mobile} {
         .gallery__item {
             height: auto; /* Altura fixa para todos */
             flex-grow: 1;  /* Faz o item expandir para preencher a linha */
