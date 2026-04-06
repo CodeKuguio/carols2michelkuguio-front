@@ -1,4 +1,4 @@
-import {useMemo, useReducer} from "react";
+import {useCallback, useEffect, useMemo, useReducer, useRef} from "react";
 import LightGallery from 'lightgallery/react';
 
 // import styles
@@ -630,6 +630,7 @@ const images = [
 ]
 
 export function Gallery() {
+    const lightGallery = useRef<any>(null);
     const [state, dispatch] = useReducer(filtersReducer, { filtersType: [], filtersCategory: [] });
     const changeType =(name:string)=>()=>{
         dispatch({
@@ -653,7 +654,14 @@ export function Gallery() {
         }
         return data
     },[state.filtersCategory, state.filtersType])
-
+    const onInit = useCallback((detail: any) => {
+        if (detail) {
+            lightGallery.current = detail.instance;
+        }
+    }, []);
+    useEffect(() => {
+        lightGallery.current.refresh();
+    }, [imagesList]);
     return (
         <WrapperCard>
             <Container>
@@ -671,6 +679,7 @@ export function Gallery() {
                 </ContainerButtonFilter>
 
                 <LightGallery
+                    onInit={onInit}
                     speed={500}
                     plugins={[lgFullscreen, lgAutoplay, lgThumbnail, lgZoom, lgVideo]}
                     mode="lg-fade"
@@ -680,7 +689,7 @@ export function Gallery() {
                     galleryId={'nature'}
                     licenseKey={'19618204-E93C-43CE-9A60-C64B2A4D4AC2'}
                     elementClassNames={'gallery'}
-                    autoplayFirstVideo={true}
+                    autoplayFirstVideo={false}
                     vimeoPlayerParams={{
                         autoplay: 0,
                         muted: 0,
@@ -688,8 +697,21 @@ export function Gallery() {
                         portrait: 0,
                         title: 0,
                         badge: 0,
+                        rel: 0,
                         autopause: 0
                     }}
+                    youTubePlayerParams={
+                        {
+                            autoplay: 0,
+                            muted: 0,
+                            byline: 0,
+                            portrait: 0,
+                            title: 0,
+                            badge: 0,
+                            autopause: 0,
+                            rel: 0,
+                        }
+                    }
                     mobileSettings={{
                         controls: false,
                         showCloseIcon: false,
@@ -714,7 +736,7 @@ export function Gallery() {
                                 key={index}
                                 className="gallery__item"
                                 data-src={`${image.src}`}
-                                data-sub-html="<h4>Filmagem Pre Wedding</h4><p>Video by <a target='_blank' href='https://vimeo.com/giulianosilveira'>Giuliano Silveira</a></p>"
+                                data-sub-html="<h4>Filmagem Carol & Michel</h4><p>Video by <a target='_blank' href='https://vimeo.com/giulianosilveira'>Giuliano Silveira</a></p>"
                             >
                                 <img
                                     className="img-responsive"
