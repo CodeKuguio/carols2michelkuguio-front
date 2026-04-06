@@ -2,6 +2,8 @@ import {useCallback, useEffect, useMemo, useReducer, useRef} from "react";
 import LightGallery from 'lightgallery/react';
 
 // import styles
+import 'lightgallery/css/lightgallery-core.css';
+import 'lightgallery/css/lightgallery-bundle.css';
 import 'lightgallery/css/lightgallery.css';
 import 'lightgallery/css/lg-zoom.css';
 import 'lightgallery/css/lg-thumbnail.css';
@@ -11,6 +13,8 @@ import 'lightgallery/css/lg-transitions.css';
 import 'lightgallery/css/lg-video.css';
 
 // If you want you can use SCSS instead of css
+import 'lightgallery/scss/lightgallery-core.scss';
+import 'lightgallery/scss/lightgallery-bundle.scss';
 import 'lightgallery/scss/lightgallery.scss';
 import 'lightgallery/scss/lg-zoom.scss';
 import 'lightgallery/scss/lg-autoplay.scss';
